@@ -1,0 +1,60 @@
+{
+  "model": "/home/zsx/nlp/models/angle-bert-base-uncased-nli-en-v1",
+  "pooling": "cls_avg",
+  "device": "cuda",
+  "batch_size": 64,
+  "max_length": 512,
+  "tasks": [
+    {
+      "task": "STS12",
+      "n": 3108,
+      "spearman": 0.7502640124223535,
+      "seconds": 3.250088691711426
+    },
+    {
+      "task": "STS13",
+      "n": 1500,
+      "spearman": 0.856183827569047,
+      "seconds": 1.1665046215057373
+    },
+    {
+      "task": "STS14",
+      "n": 3750,
+      "spearman": 0.8035189977609614,
+      "seconds": 3.045565605163574
+    },
+    {
+      "task": "STS15",
+      "n": 3000,
+      "spearman": 0.8636146283067972,
+      "seconds": 2.6228342056274414
+    },
+    {
+      "task": "STS16",
+      "n": 1186,
+      "spearman": 0.8242543904886375,
+      "seconds": 1.1224892139434814
+    },
+    {
+      "task": "SICK-R",
+      "n": 9927,
+      "spearman": 0.8151163488730516,
+      "seconds": 6.600743293762207
+    },
+    {
+      "task": "STS-B",
+      "n": 1379,
+      "spearman": 0.854609093338574,
+      "seconds": 1.1328024864196777
+    },
+    {
+      "task": "GIS",
+      "n": 1548,
+      "spearman": 0.16499929067246807,
+      "seconds": 29.592541694641113
+    }
+  ],
+  "standard_sts_average": 0.8239373283942033,
+  "strict_claim": "released_official_checkpoint_evaluation",
+  "model_sha256": "6d2e2809bd060555dbe98df9a69d4832c7c4c54892a6b33580b9199f6579cd02"
+}

@@ -1,0 +1,15 @@
+{
+  "task": "stsb",
+  "objective": "aoe",
+  "best_epoch": 1,
+  "validation_spearman": 0.8488160529940448,
+  "test_spearman": 0.822575081158564,
+  "n_test": 1379,
+  "model_init": "/home/zsx/nlp/models/angle-bert-base-uncased-nli-en-v1",
+  "pooling": "cls_avg",
+  "max_length": 128,
+  "learning_rate": 5e-05,
+  "epochs": 5,
+  "batch_size": 32,
+  "seed": 42
+}

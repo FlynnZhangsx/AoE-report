@@ -1,0 +1,44 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+*.egg-info/
+
+# Local datasets and model weights (too large for a source repository)
+data/
+models/
+
+# Raw experiment checkpoints, predictions, logs and generated figures
+results/*
+!results/strict/
+results/strict/*
+!results/strict/summary.json
+!results/strict/results.csv
+!results/downstream/
+results/downstream/*
+!results/downstream/official_senteval.json
+!results/in_domain_strict/
+results/in_domain_strict/*
+!results/in_domain_strict/results.json
+!results/in_domain_strict/stsb/
+results/in_domain_strict/stsb/*
+!results/in_domain_strict/stsb/aoe/
+results/in_domain_strict/stsb/aoe/*
+!results/in_domain_strict/stsb/aoe/result.json
+!results/in_domain_strict/gis/
+results/in_domain_strict/gis/*
+!results/in_domain_strict/gis/aoe/
+results/in_domain_strict/gis/aoe/*
+!results/in_domain_strict/gis/aoe/result.json
+
+# Vendored SentEval code is useful; its downloaded task data is not.
+third_party/SentEval/data/
+
+# Local paper conversion/intermediate files
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz

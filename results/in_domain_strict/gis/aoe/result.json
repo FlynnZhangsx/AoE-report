@@ -1,0 +1,15 @@
+{
+  "task": "gis",
+  "objective": "aoe",
+  "best_epoch": 4,
+  "validation_spearman": 0.6174149002290855,
+  "test_spearman": 0.6353937628531484,
+  "n_test": 1548,
+  "model_init": "/home/zsx/nlp/models/angle-bert-base-uncased-nli-en-v1",
+  "pooling": "cls_avg",
+  "max_length": 512,
+  "learning_rate": 5e-05,
+  "epochs": 5,
+  "batch_size": 8,
+  "seed": 42
+}

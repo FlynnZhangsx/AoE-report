@@ -1,0 +1,72 @@
+{
+  "model": "/home/zsx/nlp/models/angle-bert-base-uncased-nli-en-v1",
+  "pooling": "cls_avg",
+  "device": "cuda",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "seed": 42,
+  "batch_size": 64,
+  "max_length": 512,
+  "sent_eval_tasks": [
+    "MR",
+    "CR",
+    "SUBJ",
+    "MPQA",
+    "SST2",
+    "TREC",
+    "MRPC"
+  ],
+  "results": {
+    "MR": {
+      "devacc": 83.47,
+      "acc": 82.55,
+      "ndev": 10685,
+      "ntest": 10685,
+      "seconds": 1388.3652250766754
+    },
+    "CR": {
+      "devacc": 89.77,
+      "acc": 88.98,
+      "ndev": 3775,
+      "ntest": 3775,
+      "seconds": 434.12876296043396
+    },
+    "SUBJ": {
+      "devacc": 95.44,
+      "acc": 94.89,
+      "ndev": 10021,
+      "ntest": 10021,
+      "seconds": 1354.3374028205872
+    },
+    "MPQA": {
+      "devacc": 90.64,
+      "acc": 89.88,
+      "ndev": 10606,
+      "ntest": 10606,
+      "seconds": 1335.1894702911377
+    },
+    "SST2": {
+      "devacc": 86.58,
+      "acc": 87.59,
+      "ndev": 872,
+      "ntest": 1821,
+      "seconds": 150.96365404129028
+    },
+    "TREC": {
+      "devacc": 85.78,
+      "acc": 90.8,
+      "ndev": 5452,
+      "ntest": 500,
+      "seconds": 113.22990870475769
+    },
+    "MRPC": {
+      "devacc": 77.95,
+      "acc": 77.51,
+      "f1": 84.41,
+      "ndev": 3668,
+      "ntest": 1725,
+      "seconds": 51.423532247543335
+    }
+  },
+  "average_accuracy": 87.45714285714284,
+  "protocol": "official SentEval engine, default PyTorch logistic classifier, 10-fold where applicable"
+}
